@@ -41,6 +41,56 @@
       <label for="vehicle3">I have a Boat</label><br><br>
 
       <input type="submit" value="submit">
+     
 
+      <h2>the form target attribute</h2>
+      <p>when submitting the form will opened in new browser tab</p>
+
+      <form action="/action_page,php" target="_blank" >
+        <label for="fname">first name:</label><br>
+        <input type="text" id="fname" name="fname" value="vishal"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="lname" id="lname" name="lname" value="H"><br><br>
+        <input type="submit" value="submit">
+      </form>
+
+      <h2>the method target attribute</h2>
+      <p>the form will be submitted using the GET method</p>
+
+      <form action="/action_page,php" target="_blank" method="get">
+        <label for="fname">first name:</label><br>
+        <input type="text" id="fname" name="fname" value="vishal"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="lname" id="lname" name="lname" value="H"><br><br>
+        <input type="submit" value="submit"><br><br>
+      </form>
+
+
+      <h2>the method attribute</h2>
+      <p>the form will be submitted using the post method:</p>
+
+
+      <form action="/action_page,php" target="_blank" method="post">
+        <label for="fname">first name:</label><br>
+        <input type="text" id="fname" name="fname" value="vishal"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="lname" id="lname" name="lname" value="H"><br><br>
+        <input type="submit" value="submit">
+
+        <p>After you submit, notice that, unlike the GET method, the form values is NOT visible in the address bar of the new browser tab.</p>
+
+
+        <h2>the form autocomplete attribute</h2>
+        <p>>Fill in and submit the form, then reload the page, start to fill in the form again - and see how autocomplete works.</p>
+
+        <form action="/action_page.php" autocomplete="off">
+          <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname"><br>
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" name="lname"><br><br>
+          <input type="submit" value="submit">
+
+        </form>
+      </form>
 </body>
 </html>
